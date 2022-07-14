@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <table>
+            <input type="number" id="tuoi" placeholder="Nhập doanh số">
+            <button onclick="check()">check</button>
+            <h3>Tuổi của một người:</h3>
+            <div id="result"></div>
+        </table>
+        <script>
+            function check(){
+                let a= document.getElementById("tuoi").value;
+                if( 0 < a && a < 100)
+                {
+                    document.getElementById("result").innerHTML= "đây là tuổi của người"
+               
+            }
+        }
+        </script>
+    </table>
+</body>
+</html>
